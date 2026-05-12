@@ -25,23 +25,37 @@
   background: #fff;
 }
 
-.tool-card--blue {
+.tool-card--mounted.tool-card--blue {
   border-color: #1188f2;
   background: #eaf4ff;
 }
 
-.tool-card--orange {
+.tool-card--mounted.tool-card--orange {
   border-color: #f5a336;
   background: #fff8ed;
 }
 
-.tool-card--red {
+.tool-card--mounted.tool-card--red {
   border-color: #e91d34;
   background: #fff0f3;
 }
 
-.tool-card--gray {
+.tool-card--mounted.tool-card--gray {
   background: #fbfdff;
+}
+
+.tool-card--unmounted {
+  border-color: #d8e3ec;
+  background: #fbfdff;
+}
+
+.tool-card--unmounted .tool-card__icon {
+  opacity: 0.55;
+}
+
+.tool-card--unmounted .tool-card__title,
+.tool-card--unmounted .tool-card__desc {
+  color: #9aaec0;
 }
 
 .tool-card__copy {
@@ -67,28 +81,39 @@
 .tool-card__button {
   min-width: 82px;
   height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 12px;
   border-radius: 8px;
   color: #fff;
   font-size: 13px;
   font-weight: 900;
+  line-height: normal;
+  text-align: center;
 }
 
-.tool-card__button--blue {
+.tool-card__button--mounted.tool-card__button--blue {
   background: #1188f2;
 }
 
-.tool-card__button--orange {
+.tool-card__button--mounted.tool-card__button--orange {
   color: #111;
   background: #f5a336;
 }
 
-.tool-card__button--red {
+.tool-card__button--mounted.tool-card__button--red {
   background: #e91d34;
 }
 
-.tool-card__button--gray {
+.tool-card__button--mounted.tool-card__button--gray {
   background: #3d4b5c;
+}
+
+.tool-card__button--unmounted {
+  color: #fff;
+  background: #3d4b5c;
+  opacity: 0.72;
 }
 
 .tools-hint {

@@ -5,7 +5,7 @@ import AppHeader from '@/components/AppHeader'
 import BrandIntro from '@/components/BrandIntro'
 import BottomCta from '@/components/BottomCta'
 import IconBox from '@/components/IconBox'
-import { ledgerItems } from '@/data/mock'
+import { ledgerItems, walletAccountMock } from '@/data/walletMock'
 import './index.scss'
 
 type LedgerFilter = 'all' | 'income' | 'expense'
@@ -16,7 +16,7 @@ const filters: Array<{ key: LedgerFilter; label: string }> = [
   { key: 'expense', label: '支出' },
 ]
 
-export default function WalletPage() {
+export default function ProfilePage() {
   const [ledgerFilter, setLedgerFilter] = useState<LedgerFilter>('all')
   const visibleLedger = useMemo(
     () => ledgerItems.filter((item) => ledgerFilter === 'all' || item.type === ledgerFilter),
@@ -31,25 +31,25 @@ export default function WalletPage() {
 
         <View className='asset-card'>
           <View className='asset-card__top'>
-            <Text>慧 眼 积 分</Text>
-            <Text>◴</Text>
+            <Text>慧眼积分</Text>
+            <Text>∞</Text>
           </View>
           <View className='asset-card__main'>
-            <Text className='asset-card__number'>121</Text>
-            <Text className='asset-card__unit'>测评券</Text>
+            <Text className='asset-card__number'>{walletAccountMock.points}</Text>
+            <Text className='asset-card__unit'>{walletAccountMock.unit}</Text>
           </View>
-          <Text className='asset-card__note'>♕ 门店版 · 还剩 287 天</Text>
+          <Text className='asset-card__note'>♕ {walletAccountMock.plan} · 还剩 {walletAccountMock.remainDays} 天</Text>
         </View>
 
         <View className='wallet-actions'>
-          <Button className='wallet-action wallet-action--orange' hoverClass='tap-scale'>◎ 充值</Button>
-          <Button className='wallet-action wallet-action--blue' hoverClass='tap-scale'>♕ 升级</Button>
-          <Button className='wallet-action wallet-action--teal' hoverClass='tap-scale'>↔ 邀请</Button>
+          <Button className='wallet-action wallet-action--orange' hoverClass='tap-scale'>充值</Button>
+          <Button className='wallet-action wallet-action--blue' hoverClass='tap-scale'>升级</Button>
+          <Button className='wallet-action wallet-action--teal' hoverClass='tap-scale'>邀请</Button>
         </View>
 
         <View className='ledger-head'>
-          <Text className='ledger-head__title'>流水 · L E D G E R</Text>
-          <Text className='ledger-head__tools'>▽ ＋ －</Text>
+          <Text className='ledger-head__title'>流水 · LEDGER</Text>
+          <Text className='ledger-head__tools'>⌄</Text>
         </View>
 
         <View className='ledger-filter'>

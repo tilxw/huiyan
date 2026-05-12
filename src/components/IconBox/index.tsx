@@ -1,5 +1,5 @@
 import { View, Text } from '@tarojs/components'
-import { Tone } from '@/data/mock'
+import { Tone } from '@/data/types'
 import './index.scss'
 
 interface IconBoxProps {

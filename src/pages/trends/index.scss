@@ -1,0 +1,59 @@
+.page-placeholder {
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+
+.page__body {
+  padding: 0 16px;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.trend-card {
+  min-height: 116px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #d9e2ec;
+  background: #fff;
+}
+
+.trend-card--teal {
+  border-color: #67d7d2;
+  background: #e9fbfa;
+}
+
+.trend-card--orange {
+  border-color: #f8c77d;
+  background: #fff8ed;
+}
+
+.trend-card--red {
+  border-color: #f6a3b3;
+  background: #fff3f5;
+}
+
+.trend-card--blue {
+  border-color: #9dccff;
+  background: #e6f2ff;
+}
+
+.trend-card__title,
+.trend-card__value {
+  display: block;
+  font-weight: 900;
+}
+
+.trend-card__title {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.trend-card__value {
+  margin-top: 12px;
+  color: #0f172a;
+  font-size: 30px;
+}

@@ -28,4 +28,6 @@ pnpm-debug.log*
 
 # Local project-specific files
 prompt.md
+prompt2.md
+prompt3.md
 project.private.config.json

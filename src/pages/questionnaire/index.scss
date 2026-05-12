@@ -1,0 +1,44 @@
+.page-placeholder {
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+
+.page__body {
+  padding: 0 16px;
+}
+
+.placeholder-card {
+  padding: 16px;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.placeholder-card__title {
+  display: block;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.question-preview {
+  padding: 12px 0;
+  border-top: 1px solid #edf2f7;
+}
+
+.question-preview__meta {
+  display: block;
+  color: #0a84ff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.question-preview__title {
+  display: block;
+  margin-top: 6px;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 22px;
+}

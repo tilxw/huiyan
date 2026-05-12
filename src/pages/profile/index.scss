@@ -21,7 +21,7 @@
   color: #d8f2ff;
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 0;
 }
 
 .asset-card__main {
@@ -60,10 +60,16 @@
 
 .wallet-action {
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   border-radius: 13px;
   color: #fff;
   font-size: 15px;
   font-weight: 900;
+  line-height: normal;
+  text-align: center;
 }
 
 .wallet-action--orange {
@@ -82,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -6px;
+  margin-bottom: 0;
 }
 
 .ledger-head__title {
@@ -101,7 +107,7 @@
 .ledger-filter {
   width: 174px;
   display: flex;
-  margin: 0 auto 10px;
+  margin: 10px auto 12px;
   overflow: hidden;
   border: 1px solid #d8e3ec;
   border-radius: 999px;
@@ -111,9 +117,15 @@
 .ledger-filter__button {
   flex: 1;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   color: #9aa1aa;
   font-size: 14px;
   font-weight: 900;
+  line-height: normal;
+  text-align: center;
 }
 
 .ledger-filter__button--active {

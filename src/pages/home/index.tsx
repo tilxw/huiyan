@@ -5,16 +5,16 @@ import AppHeader from '@/components/AppHeader'
 import BrandIntro from '@/components/BrandIntro'
 import BottomCta from '@/components/BottomCta'
 import IconBox from '@/components/IconBox'
-import { roles } from '@/data/mock'
+import { identities } from '@/data/identities'
 import './index.scss'
 
 export default function HomePage() {
-  const [selectedRoleId, setSelectedRoleId] = useState(roles[0].id)
-  const selectedRole = roles.find((role) => role.id === selectedRoleId) || roles[0]
+  const [selectedIdentityId, setSelectedIdentityId] = useState(identities[0].id)
+  const selectedIdentity = identities.find((item) => item.id === selectedIdentityId) || identities[0]
 
-  const goReport = () => {
-    Taro.setStorageSync('huiyan:selectedRole', selectedRole)
-    Taro.switchTab({ url: '/pages/report/index' })
+  const startAssessment = () => {
+    Taro.setStorageSync('huiyan:selectedIdentity', selectedIdentity)
+    Taro.navigateTo({ url: '/pages/questionnaire/index' })
   }
 
   return (
@@ -23,26 +23,26 @@ export default function HomePage() {
       <View className='page__body'>
         <BrandIntro title='选择您的产业身份' subtitle='不同角色 · 题库与诊断路径不同' />
         <View className='role-grid'>
-          {roles.map((role) => {
-            const selected = role.id === selectedRoleId
+          {identities.map((identity) => {
+            const selected = identity.id === selectedIdentityId
             return (
               <Button
-                key={role.id}
+                key={identity.id}
                 className={`role-card ${selected ? 'role-card--selected' : ''}`}
                 hoverClass='tap-scale'
-                onClick={() => setSelectedRoleId(role.id)}
+                onClick={() => setSelectedIdentityId(identity.id)}
               >
                 {selected && <Text className='role-card__check'>✓</Text>}
-                <IconBox icon={role.icon} active={selected} />
+                <IconBox icon={identity.icon} active={selected} />
                 <View className='role-card__copy'>
-                  <Text className='role-card__title'>{role.name}</Text>
-                  <Text className='role-card__desc'>{role.desc}</Text>
+                  <Text className='role-card__title'>{identity.name}</Text>
+                  <Text className='role-card__desc'>{identity.desc}</Text>
                 </View>
               </Button>
             )
           })}
         </View>
-        <BottomCta text={`开始测评 · ${selectedRole.name}  →`} onClick={goReport} />
+        <BottomCta text={`开始测评 · ${selectedIdentity.name}  →`} onClick={startAssessment} />
       </View>
     </View>
   )
