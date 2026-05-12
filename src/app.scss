@@ -1,0 +1,29 @@
+page {
+  min-height: 100%;
+  background: #f6fafd;
+  color: #07213b;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+view,
+text,
+button {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+  background: transparent;
+}
+
+button::after {
+  border: 0;
+}
+
+.tap-scale {
+  opacity: 0.88;
+  transform: scale(0.98);
+}

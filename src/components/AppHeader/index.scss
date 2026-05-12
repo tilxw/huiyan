@@ -1,0 +1,45 @@
+.app-header {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 54px 1fr 86px;
+  align-items: center;
+  padding: 0 18px;
+  background: #fbfbfc;
+  border-bottom: 1px solid rgba(7, 29, 51, 0.08);
+}
+
+.app-header__back {
+  color: #1d2a38;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.app-header__title {
+  text-align: center;
+  color: #000;
+  font-family: "Songti SC", STSong, SimSun, serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.app-header__capsule {
+  justify-self: end;
+  min-width: 72px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #d4d8dc;
+  border-radius: 999px;
+  color: #1b222a;
+  background: #f0f1f2;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.app-header__divider {
+  width: 1px;
+  height: 16px;
+  background: #d0d2d5;
+}

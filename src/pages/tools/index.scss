@@ -1,0 +1,134 @@
+.page {
+  min-height: 100vh;
+  background: #f6fafd;
+}
+
+.page__body {
+  padding: 0 16px;
+}
+
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tool-card {
+  min-height: 74px;
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #d8e3ec;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.tool-card--blue {
+  border-color: #1188f2;
+  background: #eaf4ff;
+}
+
+.tool-card--orange {
+  border-color: #f5a336;
+  background: #fff8ed;
+}
+
+.tool-card--red {
+  border-color: #e91d34;
+  background: #fff0f3;
+}
+
+.tool-card--gray {
+  background: #fbfdff;
+}
+
+.tool-card__copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-card__title {
+  color: #07213b;
+  font-family: "Songti SC", STSong, SimSun, serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.tool-card__desc {
+  margin-top: 4px;
+  color: #9aaec0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tool-card__button {
+  min-width: 82px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tool-card__button--blue {
+  background: #1188f2;
+}
+
+.tool-card__button--orange {
+  color: #111;
+  background: #f5a336;
+}
+
+.tool-card__button--red {
+  background: #e91d34;
+}
+
+.tool-card__button--gray {
+  background: #3d4b5c;
+}
+
+.tools-hint {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(18, 184, 178, 0.36);
+  border-radius: 12px;
+  background: #e9fbfa;
+  color: #07213b;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.tools-hint__strong {
+  color: #12b8b2;
+  font-weight: 900;
+}
+
+.profile-progress {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 56px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #fff;
+  background: #071d33;
+}
+
+.profile-progress__icon,
+.profile-progress__count {
+  color: #f5a336;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.profile-progress__text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 800;
+}

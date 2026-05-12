@@ -1,0 +1,112 @@
+.page {
+  min-height: 100vh;
+  background: #f6fafd;
+}
+
+.page__body {
+  padding: 0 16px;
+}
+
+.diagnosis-card,
+.solution-card {
+  padding: 14px 15px;
+  border-radius: 16px;
+}
+
+.diagnosis-card {
+  border: 1px solid rgba(233, 29, 52, 0.36);
+  background: #fff3f5;
+}
+
+.diagnosis-card__title,
+.solution-card__title {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.diagnosis-card__title,
+.danger {
+  color: #e91d34;
+}
+
+.diagnosis-card__content {
+  color: #07213b;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.solution-card {
+  margin-top: 12px;
+  border: 1px solid rgba(18, 184, 178, 0.38);
+  background: #edfafa;
+}
+
+.solution-card__title,
+.solution-item {
+  color: #12b8b2;
+}
+
+.solution-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.solution-item {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.section-label {
+  display: block;
+  margin: 23px 0 10px;
+  color: #9aaec0;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.share-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.share-card {
+  min-height: 62px;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #d8e3ec;
+  border-radius: 12px;
+  background: #fff;
+  text-align: left;
+}
+
+.share-card__copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.share-card__title {
+  color: #07213b;
+  font-family: "Songti SC", STSong, SimSun, serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.share-card__desc {
+  margin-top: 4px;
+  color: #9aaec0;
+  font-size: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

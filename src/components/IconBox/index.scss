@@ -1,0 +1,42 @@
+.icon-box {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #edf4f8;
+  color: #9fb4c4;
+}
+
+.icon-box__text {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.icon-box--active,
+.icon-box--blue {
+  color: #fff;
+  background: #1188f2;
+}
+
+.icon-box--teal {
+  color: #fff;
+  background: #12b8b2;
+}
+
+.icon-box--orange {
+  color: #111;
+  background: #f5a336;
+}
+
+.icon-box--red {
+  color: #fff;
+  background: #e91d34;
+}
+
+.icon-box--gray {
+  color: #9fb4c4;
+  background: #edf4f8;
+}
